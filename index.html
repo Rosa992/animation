@@ -8,27 +8,15 @@
   <body>
 <main>
 
-  <h1>light switch</h1>
-
-  <div class="firstButton">
-  <button onclick="document.getElementById('myImage').src='happy.png'">
-
-  Turn on</button>
-  </div>
+<h1>light switch</h1>
 
 
 
+  <img id="myImage" onclick="changeImage()" src="sad.png" width="100" height="180">
 
-
-
-
-  <div class="sad">
-  <img id="myImage" src="sad.png">
-  </div>
-
-  <div class="secondButton">
-  <button onclick="document.getElementById('myImage').src='sad.png'">Turn off</button>
-  </div>
+  <p>Click the happy face.</p>
+  <p>happy = light on </p>
+  <p>sad = light off</p>
 
 
 
@@ -36,19 +24,34 @@
 
 
 
-  <div class="attribute">
+
+
+
+
+
+
+  <footer>
   <h3>attributions</h3>
     <ul>
        <li>Image by PublicDomainPictures from Pixabay</li>
        <li>Image by Wilson Joseph from Pixabay</li>
     </ul>
-  </div>
+  </footer>
 
 
 
 
 
-
+  <script>
+  function changeImage() {
+    var image = document.getElementById("myImage");
+    if (image.src.match("happy")) {
+      image.src = "sad.png";
+    } else {
+      image.src = "happy.png";
+    }
+  }
+  </script>
 </main>
   </body>
 </html>
