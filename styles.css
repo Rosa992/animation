@@ -9,18 +9,7 @@ img {
  margin: auto;
 }
 
-.firstButton {
-  display: flex;
-justify-content: center;
-  margin: auto;
-padding-bottom: 10px;
-}
 
-.secondButton {
-  text-align: center;
-  margin: auto;
-  padding-top: 10px;
-}
 
 
 .attribute {
